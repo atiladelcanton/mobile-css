@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <title>Mobile CSS</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="mobile">
-        <div class="mobile__top">
-            <div class="mobile__top__camera"></div>
-            <div class="mobile__top__speak"></div>
-        </div>
-        <div class="mobile__screen">
-            <div class="mobile__screen__glass"></div>
-        </div>
-        <div class="mobile__button"></div>
+      <div class="mobile__top">
+        <div class="mobile__top__camera"></div>
+        <div class="mobile__top__speak"></div>
+      </div>
+      <div class="mobile__screen">
+        <div class="mobile__screen__glass"></div>
+      </div>
+      <div class="mobile__button"></div>
     </div>
-</body>
+    <script>
+      window.onload = function () {
+        var tl = gsap.timeline();
+        tl.to(".mobile", { duration: 1, scale: 1, ease: "bounce" });
+        tl.to(".mobile__top", { duration: 1, scale: 1, ease: "bounce" });
+        tl.to(".mobile__top__camera", {
+          duration: 1,
+          scale: 1,
+          ease: "bounce",
+        });
+        tl.to(".mobile__top__speak", { duration: 1, scale: 1, ease: "bounce" });
+        tl.to(".mobile__screen", { duration: 1, scale: 1, ease: "bounce" });
+        tl.to(".mobile__screen__glass", {
+          duration: 1,
+          scale: 1,
+        });
+        tl.to(".mobile__button", { duration: 1, scale: 1, ease: "bounce" });
+      };
+    </script>
+  </body>
 </html>

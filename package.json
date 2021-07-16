@@ -1,0 +1,21 @@
+{
+  "name": "mobile-css",
+  "version": "1.0.0",
+  "description": "Mobile desenhado com html / css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atiladelcanton/mobile-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atiladelcanton/mobile-css/issues"
+  },
+  "homepage": "https://github.com/atiladelcanton/mobile-css#readme"
+}
